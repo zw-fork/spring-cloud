@@ -19,6 +19,7 @@ public class ServerPortUtils {
         Random random = new Random();
         int port = random.nextInt(max)%(max-min+1) + min;
         boolean using = NetUtils.isLoclePortUsing(port);
+		// 如果端口正在使用，则递归继续查找，可用端口。
         if (using) {
             return getAvailablePort();
         } else {

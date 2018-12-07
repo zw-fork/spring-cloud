@@ -5,7 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 /**
- * 启动参数设置类
+ * 启动参数设置类。判断启动参数(格式为：--server.port=8080)是否设置了端口，如果没有则获取一个随机的可用端口。
  *
  * @author yinjihuan
  * @create 2017-11-21 15:41
